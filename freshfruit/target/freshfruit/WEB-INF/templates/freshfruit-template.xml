@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+       <tiles-definitions>
+       		<definition name="freshfruit.template" template="/WEB-INF/jsp/templates/freshfruit_template.jsp">
+       			<put-attribute name="header" value="/WEB-INF/jsp/components/freshfruit/header.jsp"/>
+       			<put-attribute name="content" value=""/>
+       			<put-attribute name="footer" value="/WEB-INF/jsp/components/freshfruit/footer.jsp"/>
+       		</definition>
+       		
+       		<definition name="freshfruit.index" extends="freshfruit.template">
+       			<put-attribute name="content" value="/WEB-INF/jsp/views/freshfruit/index.jsp"></put-attribute>
+       		</definition>
+       		
+       		<definition name="freshfruit.contact" extends="freshfruit.template">
+       			<put-attribute name="content" value="/WEB-INF/jsp/views/freshfruit/contact.jsp"></put-attribute>
+       		</definition>
+
+			<definition name="freshfruit.about" extends="freshfruit.template">
+       			<put-attribute name="content" value="/WEB-INF/jsp/views/freshfruit/about.jsp"></put-attribute>
+       		</definition>
+       		
+       		<definition name="freshfruit.cart" extends="freshfruit.template">
+       			<put-attribute name="content" value="/WEB-INF/jsp/views/freshfruit/cart.jsp"></put-attribute>
+       		</definition>
+       		
+       		<definition name="freshfruit.checkout" extends="freshfruit.template">
+       			<put-attribute name="content" value="/WEB-INF/jsp/views/freshfruit/checkout.jsp"></put-attribute>
+       		</definition>
+       		
+       		<definition name="freshfruit.news" extends="freshfruit.template">
+       			<put-attribute name="content" value="/WEB-INF/jsp/views/freshfruit/news.jsp"></put-attribute>
+       		</definition>
+       		
+       		<definition name="freshfruit.detail" extends="freshfruit.template">
+       			<put-attribute name="content" value="/WEB-INF/jsp/views/freshfruit/detail.jsp"></put-attribute>
+       		</definition>
+       		
+       		<definition name="freshfruit.product" extends="freshfruit.template">
+       			<put-attribute name="content" value="/WEB-INF/jsp/views/freshfruit/product.jsp"></put-attribute>
+       		</definition>
+       		
+       		<definition name="freshfruit.productdetail" extends="freshfruit.template">
+       			<put-attribute name="content" value="/WEB-INF/jsp/views/freshfruit/productdetail.jsp"></put-attribute>
+       		</definition>
+       		
+       		<definition name="freshfruit.search" extends="freshfruit.template">
+       			<put-attribute name="content" value="/WEB-INF/jsp/views/freshfruit/search.jsp"></put-attribute>
+       		</definition>
+       		
+       		<definition name="freshfruit.bill" extends="freshfruit.template">
+       			<put-attribute name="content" value="/WEB-INF/jsp/views/freshfruit/bill.jsp"></put-attribute>
+       		</definition>
+       		
+       		<definition name="freshfruit.profile" extends="freshfruit.template">
+       			<put-attribute name="content" value="/WEB-INF/jsp/views/freshfruit/profile.jsp"></put-attribute>
+       		</definition>
+       </tiles-definitions>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+       <tiles-definitions>
+       		<definition name="admin.template" template="/WEB-INF/jsp/templates/admin_template.jsp">
+       			<put-attribute name="header" value="/WEB-INF/jsp/components/admin/header.jsp"/>
+       			<put-attribute name="leftbar" value="/WEB-INF/jsp/components/admin/leftbar.jsp"/>
+       			<put-attribute name="content" value=""/>
+       			<put-attribute name="footer" value="/WEB-INF/jsp/components/admin/footer.jsp"/>
+       		</definition>
+       		
+       		<definition name="admin.index" extends="admin.template">
+       			<put-attribute name="content" value="/WEB-INF/jsp/views/admin/index.jsp"></put-attribute>
+       		</definition>
+       		
+       		<definition name="admin.product" extends="admin.template">
+       			<put-attribute name="content" value="/WEB-INF/jsp/views/admin/product/index.jsp"></put-attribute>
+       		</definition>
+       		
+       		<definition name="admin.product.add" extends="admin.template">
+       			<put-attribute name="content" value="/WEB-INF/jsp/views/admin/product/add.jsp"></put-attribute>
+       		</definition>
+       		
+       		<definition name="admin.product.edit" extends="admin.template">
+       			<put-attribute name="content" value="/WEB-INF/jsp/views/admin/product/edit.jsp"></put-attribute>
+       		</definition>
+       		
+       		<definition name="admin.menu" extends="admin.template">
+       			<put-attribute name="content" value="/WEB-INF/jsp/views/admin/product/menu.jsp"></put-attribute>
+       		</definition>
+       		
+       		<definition name="admin.newsdetail" extends="admin.template">
+       			<put-attribute name="content" value="/WEB-INF/jsp/views/admin/newsdetail/index.jsp"></put-attribute>
+       		</definition>
+       		
+       		<definition name="admin.newsdetail.add" extends="admin.template">
+       			<put-attribute name="content" value="/WEB-INF/jsp/views/admin/newsdetail/add.jsp"></put-attribute>
+       		</definition>
+       		
+       		<definition name="admin.newsdetail.edit" extends="admin.template">
+       			<put-attribute name="content" value="/WEB-INF/jsp/views/admin/newsdetail/edit.jsp"></put-attribute>
+       		</definition>
+       		
+       		<definition name="admin.news" extends="admin.template">
+       			<put-attribute name="content" value="/WEB-INF/jsp/views/admin/newsdetail/news.jsp"></put-attribute>
+       		</definition>
+       		
+       		<definition name="admin.bill" extends="admin.template">
+       			<put-attribute name="content" value="/WEB-INF/jsp/views/admin/bill/index.jsp"></put-attribute>
+       		</definition>
+       		
+       		<definition name="admin.comment" extends="admin.template">
+       			<put-attribute name="content" value="/WEB-INF/jsp/views/admin/comment/index.jsp"></put-attribute>
+       		</definition>
+       		
+       		<definition name="admin.user" extends="admin.template">
+       			<put-attribute name="content" value="/WEB-INF/jsp/views/admin/user/index.jsp"></put-attribute>
+       		</definition>
+       		
+       		<definition name="admin.contact" extends="admin.template">
+       			<put-attribute name="content" value="/WEB-INF/jsp/views/admin/contact/index.jsp"></put-attribute>
+       		</definition>
+
+       </tiles-definitions>
